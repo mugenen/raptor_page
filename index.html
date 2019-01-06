@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>jQuery Raptorize プラグインの恐竜を繰り返し表示してくれるページ</title>
+	
+	<script src="jquery.1.4.2.min.js"></script>
+	<script src="jquery.raptorize.1.0.js"></script>
+	
+	<script type="text/javascript">
+		$(window).load(function() {
+			$('.button').raptorize();
+		});
+		setInterval(function () {
+			$('.button').click();
+		}, 3000);
+	</script>
+</head>
+<body>
+	<p>音が出るので注意</p>
+	<p><a href="#" class="button"></a></p>
+	<p>jQueryのRaptorizeプラグインを使っています。<a href="https://zurb.com/playground/jquery-raptorize">https://zurb.com/playground/jquery-raptorize</a> Copyright ZURB, released under the MIT license</p>
+</body>
+</html>
